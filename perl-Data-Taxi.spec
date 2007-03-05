@@ -21,10 +21,15 @@ BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-Taxi (Taint-Aware XML-Ish) is a data serializer with several handy features:
-- Taint aware. Taxi does not force you to trust the data you are serializing. None of the input data is executed.
-- Human readable. Taxi produces a human-readable string that simplifies checking the output of your objects.
-- XML-ish. While full XML compliance is not promised, Taxi produces a block of XML-ish data that could probably be read in by other XML parsers.
+Taxi (Taint-Aware XML-Ish) is a data serializer with several handy
+features:
+- Taint aware. Taxi does not force you to trust the data you are
+  serializing. None of the input data is executed.
+- Human readable. Taxi produces a human-readable string that
+  simplifies checking the output of your objects.
+- XML-ish. While full XML compliance is not promised, Taxi produces a
+  block of XML-ish data that could probably be read in by other XML
+  parsers.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
