@@ -6,13 +6,14 @@
 %define		pdir	Data
 %define		pnam	Taxi
 Summary:	Data::Taxi - Taint-aware, XML-ish data serialization
+Summary(pl.UTF-8):	Data::Taxi - serializacja danych XML-owych z uwzględnieniem napiętnowania
 Name:		perl-Data-Taxi
 Version:	0.94
 Release:	1
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
-Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
+Source0:	http://www.cpan.org/modules/by-module/Data/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	5d7c981fba542ae8b170e6d31af4c86d
 URL:		http://search.cpan.org/dist/Data-Taxi/
 BuildRequires:	perl-devel >= 1:5.8.0
@@ -30,6 +31,17 @@ features:
 - XML-ish. While full XML compliance is not promised, Taxi produces a
   block of XML-ish data that could probably be read in by other XML
   parsers.
+
+%description -l pl.UTF-8
+Taxi (Taint-Aware XML-Ish) to serializator danych z kilkoma dogodnymi
+cechami:
+- uwzględnianie napiętnowania: Taxi nie zmusza do ufania
+  serializowanym danym, żadne z danych wejściowych nie są wykonywane
+- czytelność dla człowieka: Taxi tworzy czytelne dla człowieka
+  łańcuchy znaków, co upraszcza sprawdzanie wyjścia obiektów
+- XML-owość: o ile pełna zgodność z XML nie jest obiecywana, to Taxi
+  tworzy blok danych XML-owych, które prawdopodobnie można odczytać
+  innym analizatorem XML-a.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
