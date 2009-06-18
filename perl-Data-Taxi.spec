@@ -8,13 +8,13 @@
 Summary:	Data::Taxi - Taint-aware, XML-ish data serialization
 Summary(pl.UTF-8):	Data::Taxi - serializacja danych XML-owych z uwzględnieniem napiętnowania
 Name:		perl-Data-Taxi
-Version:	0.94
+Version:	0.95
 Release:	1
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/Data/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	5d7c981fba542ae8b170e6d31af4c86d
+# Source0-md5:	aaca2b0c02a19c5f1abdf5aa0f34eb60
 URL:		http://search.cpan.org/dist/Data-Taxi/
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
