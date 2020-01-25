@@ -2,7 +2,6 @@
 # Conditional build:
 %bcond_without	tests	# do not perform "make test"
 #
-%include	/usr/lib/rpm/macros.perl
 %define		pdir	Data
 %define		pnam	Taxi
 Summary:	Data::Taxi - Taint-aware, XML-ish data serialization
